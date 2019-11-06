@@ -12,7 +12,6 @@ int main()
 
     ///Skriv in fem heltal
     cout << "Skriv in fem heltal: ";
-    ///cout << "Du skrev in heltalen: " << "\n" << flush;
     for(int i{0}; i<5; ++i)
     {
         cin >> h;
@@ -29,5 +28,11 @@ int main()
          cout << h << ", ";
         }
     } 
+
+    ///Skriv in ett flyttal
+    double f;
+    cout << "Skriv in ett flyttal: ";
+    cin >> f;
+    cout << "Du skrev in: flyttalet: " << setfill(-) << setw(8) << setprecision(2) << f << "\n" << flush;
     return 0;
 }
