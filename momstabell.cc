@@ -10,7 +10,7 @@ int main() {
 
   cout << "INMATNINGSDEL" << endl;
   cout << "=============" << endl;
-  cout << "Mata in första pris: TEST";
+  cout << "Mata in första pris: ";
   cin >> x;
   cout << "Mata in sista pris: ";
   cin >> y;
