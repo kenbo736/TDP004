@@ -60,6 +60,7 @@ int main()
     */
 
     string s;
+    /*
     cout << "Skriv in en sträng: ";
     cin >> s;
     cout << "Strängen '" << s << "' har " << s.length() << " tecken." << "\n" << flush;
@@ -67,7 +68,7 @@ int main()
     cout << "Skriv in ett heltal och en sträng: ";
     cin >> h >> s;
     cout << "Du skrev in talet |" << h << "| och strängen |" << s << "|. \n" << flush;
-
+    */
     cout << "Skriv in en sträng och ett flyttal: ";
     cin >> s >> f;
     cout << "Du skrev in '" << f << setprecision(3) << "' och '" << s << "'. \n" << flush;
