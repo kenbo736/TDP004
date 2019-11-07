@@ -1,10 +1,11 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 int main()
 {
-    
+
     ///Skriv in ett heltal
     int h;
     /*
@@ -18,7 +19,7 @@ int main()
     {
         cin >> h;
         if(i == 0)
-        { 
+        {
          cout << "Du skrev ut talen: " << h << ", ";
         }
         else if(i == 4)
@@ -29,7 +30,7 @@ int main()
         {
          cout << h << ", ";
         }
-    } 
+    }
     */
     ///Skriv in ett flyttal
     double f;
@@ -57,6 +58,22 @@ int main()
     cin >> c;
     cout << "Du skrev in tecknet: " << c << "\n" << flush;
     */
-    
+
+    string s;
+    cout << "Skriv in en sträng: ";
+    cin >> s;
+    cout << "Strängen '" << s << "' har " << s.length() << " tecken." << "\n" << flush;
+
+    cout << "Skriv in ett heltal och en sträng: ";
+    cin >> h >> s;
+    cout << "Du skrev in talet |" << h << "| och strängen |" << s << "|. \n" << flush;
+
+    cout << "Skriv in en sträng och ett flyttal: ";
+    cin >> s >> f;
+    cout << "Du skrev in '" << f << setprecision(3) << "' och '" << s << "'. \n" << flush;
+
+    cout << "Skriv in hel rad med text: ";
+    getline(cin, s);
+    cout << "Du skrev in textraden: '" << s << "' \n" << flush;
     return 0;
 }
