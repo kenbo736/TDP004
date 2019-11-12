@@ -10,17 +10,29 @@
 using namespace std;
 
 int main(){
-  times t1{};
-  times t2{};
+  times t1{12, 12, 12};
+  times t2{24, 12, 12};
 
-  to_string(t1);
-  to_string(t2);
+  //giltig(t1);
+  //giltig(t2);
+  formatering(t1);
+  formatering(t2);
   return 0;
 }
 
-void to_string(times t){
+void giltig(times t){
   if (t.hh<24 && t.mm<60 && t.ss<60){
     cout << setfill('0') << setw(2) << t.hh << ":" << setfill('0') << setw(2) << t.mm << ":" << setfill('0') << setw(2) << t.ss << endl;
+  }
+}
+
+int formatering(times t){
+  //cout << setfill('0') << setw(2) << t.hh << ":" << setfill('0') << setw(2) << t.mm << ":" << setfill('0') << setw(2) << t.ss << endl;
+  if (t.hh<13 && t.mm<60 && t.ss<60){ //PM
+    cout << setfill('0') << setw(2) << t.hh << ":" << setfill('0') << setw(2) << t.mm << ":" << setfill('0') << setw(2) << t.ss << " AM" << endl;
+  }
+  else if(t.hh>12 && t.mm<60 && t.ss<60){
+    cout << setfill('0') << setw(2) << t.hh-12 << ":" << setfill('0') << setw(2) << t.mm << ":" << setfill('0') << setw(2) << t.ss << " PM" << endl;
   }
 }
 

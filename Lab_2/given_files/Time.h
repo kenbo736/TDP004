@@ -7,4 +7,5 @@ struct times {
   int ss{};
 };
 
-void to_string(times); //function
+void giltig(times); //function
+int formatering(times);
