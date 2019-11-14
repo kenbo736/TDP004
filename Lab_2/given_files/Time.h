@@ -7,5 +7,5 @@ struct times {
   int ss{};
 };
 
-void giltig(times); //function
-int formatering(times);
+int giltig(times t); //function
+void formatering(times t);
